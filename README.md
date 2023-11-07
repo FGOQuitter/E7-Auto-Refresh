@@ -9,8 +9,8 @@ This code is heavily referenced from Epic_Scripted's E7-Auto-Shop-Refresh-Custom
 ## How to Run:
 1. Make sure you have [Python](https://www.python.org/downloads/) and the correct dependencies installed (see below)
 2. Set your resolution to 1920x1080. This macro will not work for other resolutions
-3. Open and maximize Google Play
-4. Open Epic Seven, then enter Secret Shop
+3. Open Google Play
+4. Open Epic Seven, then enter Secret Shop and maximize with F11
 5. Run the Python script
 	>If running from terminal, make sure the refresh button is visible on the screen
 6. If running the script for the first time, make sure everything works correctly first
