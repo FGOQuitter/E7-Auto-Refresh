@@ -87,7 +87,7 @@ run_timeout = float(input("How long should this macro be run for? (Enter in minu
 start_time = time.time()
 start_datetime = datetime.datetime.now()
 
-timeout = 10 #if program hangs for 5 seconds, terminate
+timeout = 5 #if program hangs for 5 seconds, terminate
 #Locate refresh button
 RB_pos=pyautogui.locateOnScreen('refresh_button.png',confidence=0.8)
 #If refresh button is not found, you may need to replace the images with your own
@@ -99,6 +99,8 @@ if (RB_pos == None):
 mystic_count = 0
 covenant_count = 0
 refresh_count = 0
+
+time.sleep(2) #to give time to minimize CMD tab to open video on second monitor
 
 while ((exit_flag == 0) and (time.time() < start_time+run_timeout)):
     #The confidence is added due to little variations in the background
